@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+  <button id="toggleMode"  onclick ="DarkModeLightMode()">🌙</button>
+
+  <div class="weather-container">
+    <h1>Weather App</h1>
+    <input id="cityInput" type="text" placeholder="Enter city name" />
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="result" class="result">
+
+      <!-- Static sample weather data -->
+
+      <div class="weather-icon" aria-label="Weather condition">⛅️</div>
+
+      <div class="temperature">31.2<span>°C</span></div>
+
+      <div class="cityWeather">Weather in <strong>Cairo</strong></div>
+
+      <div class="details">
+        <div class="windSpeed">Wind Speed: 13.7 km/h</div>
+        <div class="windDirection">Wind Direction: Southwest</div>
+      </div>
+
+      <div class="details Condition" style="margin-top: 10px; font-weight: 600;">
+        Condition: Partly Cloudy
+      </div>
+
+      <div class="time" style="margin-top: 15px; font-size: 14px; color: #6b7280;">
+        Time: 2025-05-31T10:30
+      </div>
+
+    </div>
+      <div id="notification" class="notification hidden">No matching location found. Please check the name and try again</div>
+  </div>
+
+
+  <script src="Js/main.js"></script>
+</body>
+</html>
